@@ -5,12 +5,13 @@ function init() {
 
 const button = document.getElementById('button1')
 const body = document.querySelector('body')
-const newBox = document.createElement('newBox')
-newBox.innerText = 'Clicked'
-newBox.style.color = 'white'
+
 
 
 function buttonClick() {
+  let newBox = document.createElement('p')
+  newBox.innerText = 'Clicked'
+  newBox.style.color = 'white'
   body.appendChild(newBox)
 }
 button.addEventListener('click', buttonClick)
